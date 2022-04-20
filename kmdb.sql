@@ -188,5 +188,5 @@ from movies inner join studios on movies.studio_id = studios.id
 
 
 select movies.title, actors.name, characters.name
-from actors inner join characters on actors.id = characters.actor_id
-from movies inner join characters on movies.id = characters.movie_id;
+from characters inner join actors on characters.actor_id = actors.id
+inner join movies on characters.movie_id = movies.id;
