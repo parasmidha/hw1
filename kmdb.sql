@@ -127,6 +127,7 @@
 -- The SQL statement for the cast output
 -- TODO!
 
+
 DROP TABLE IF EXISTS actors;
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS studios;
@@ -135,8 +136,7 @@ DROP TABLE IF EXISTS characters;
 
 CREATE TABLE actors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  first_name TEXT,
-  last_name TEXT
+  name TEXT
 );
 
 CREATE TABLE movies (
@@ -154,6 +154,39 @@ CREATE TABLE studios (
 
 CREATE TABLE characters (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
   actor_id INTEGER,
   movie_id INTEGER
 );
+INSERT into studios (name)
+values ("Warner Bros.");
+
+INSERT into actors (name)
+values ("Christian Bale"), ("Michael Caine"), ("Liam Neeson"), ("Katie Holmes"), ("Gary Oldman"), ("Heath Ledger"), ("Aaron Eckhart"), ("Maggie Gyllenhaal"), ("Liam Neeson"),("Tom Hardy"), ("Joseph Gordon-Levitt"), ("Anne Hathaway");
+
+INSERT into movies (title, year_released, MPAA_rating)
+values ("Batman Begins", "2005", "PG-13"), ("The Dark Knight", "2008", "PG-13"), ("The Dark Knight Rises", "2012", "PG-13");
+
+INSERT into characters (name)
+values ("Bruce Wayne"), ("Alfred"), ("Ra's Al Ghul"), ("Rachel Dawes"), ("Commissioner Gordon"), ("Joker"), ("Harvey Dent"), ("Bane"), ("John Blake"), ("Selina Kyle")
+;
+
+.print "Movies"
+.print "======"
+.print ""
+
+
+
+SELECT movies.title, movies.year_released, movies.MPAA_rating, studios.name 
+from movies inner join studios on movies.studio_id = studios.id
+;
+
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+
+
+select movies.title, actors.name, characters.name
+from actors inner join characters on actors.id = characters.actor_id
+from movies inner join characters on movies.id = characters.movie_id;
