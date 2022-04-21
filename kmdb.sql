@@ -195,6 +195,6 @@ inner join movies on characters.movie_id = movies.id
 order by movies.title
 ;
 
-.width 30 30 30
+.width auto
 .mode column
 .headers off
