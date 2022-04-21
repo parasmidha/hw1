@@ -172,7 +172,7 @@ values ("Batman Begins", "2005", "PG-13", 1), ("The Dark Knight", "2008", "PG-13
 
 
 INSERT into characters (name, movie_id, actor_id)
-values ("Bruce Wayne", 1, 1), ("Bruce Wayne", 2, 1),("Bruce Wayne", 3, 1),("Alfred", 1, 4), ("Alfred", 2, 4), ("Ra's Al Ghul", 1, 6), ("Rachel Dawes", 1, 7),("Commissioner Gordon", 1, 8),("Commissioner Gordon", 3, 8),("Joker", 2, 2), ("Harvey Dent", 2, 3),("Rachel Dawes", 2, 5),("Bane", 3, 9), ("John Blake", 3, 10), ("Selina Kyle", 3, 11)
+values ("Bruce Wayne", 1, 1), ("Alfred", 1, 4),("Ra's Al Ghul", 1, 6),("Rachel Dawes", 1, 7),("Commissioner Gordon", 1, 8),("Bruce Wayne", 2, 1),("Joker", 2, 2),("Harvey Dent", 2, 3),("Alfred", 2, 4),("Rachel Dawes", 2, 5),("Bruce Wayne", 3, 1),("Commissioner Gordon", 3, 8), ("Bane", 3, 9), ("John Blake", 3, 10), ("Selina Kyle", 3, 11)
 ;
 
 .width 30 30 30
