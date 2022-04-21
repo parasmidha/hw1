@@ -164,7 +164,7 @@ INSERT into studios (name)
 values ("Warner Bros.");
 
 INSERT into actors (name)
-values ("Christian Bale"), ("Michael Caine"), ("Liam Neeson"), ("Katie Holmes"), ("Gary Oldman"), ("Heath Ledger"), ("Aaron Eckhart"), ("Maggie Gyllenhaal"), ("Tom Hardy"), ("Joseph Gordon-Levitt"), ("Anne Hathaway");
+values ("Christian Bale"),("Heath Ledger"), ("Aaron Eckhart"),("Michael Caine"),("Maggie Gyllenhaal"), ("Liam Neeson"), ("Katie Holmes"), ("Gary Oldman"), ("Tom Hardy"), ("Joseph Gordon-Levitt"), ("Anne Hathaway");
 
 INSERT into movies (title, year_released, MPAA_rating, studio_id)
 values ("Batman Begins", "2005", "PG-13", 1), ("The Dark Knight", "2008", "PG-13", 1), ("The Dark Knight Rises", "2012", "PG-13", 1)
@@ -172,7 +172,7 @@ values ("Batman Begins", "2005", "PG-13", 1), ("The Dark Knight", "2008", "PG-13
 
 
 INSERT into characters (name, movie_id, actor_id)
-values ("Bruce Wayne", 1, 1), ("Bruce Wayne", 2, 1),("Bruce Wayne", 3, 1),("Alfred", 1, 2), ("Alfred", 2, 2), ("Ra's Al Ghul", 1, 3), ("Rachel Dawes", 1, 4),("Commissioner Gordon", 1, 5),("Commissioner Gordon", 3, 5),("Joker", 2, 6), ("Harvey Dent", 2, 7),("Rachel Dawes", 2, 8),("Bane", 3, 9), ("John Blake", 3, 10), ("Selina Kyle", 3, 11)
+values ("Bruce Wayne", 1, 1), ("Bruce Wayne", 2, 1),("Bruce Wayne", 3, 1),("Alfred", 1, 4), ("Alfred", 2, 4), ("Ra's Al Ghul", 1, 6), ("Rachel Dawes", 1, 7),("Commissioner Gordon", 1, 8),("Commissioner Gordon", 3, 8),("Joker", 2, 2), ("Harvey Dent", 2, 3),("Rachel Dawes", 2, 5),("Bane", 3, 9), ("John Blake", 3, 10), ("Selina Kyle", 3, 11)
 ;
 
 .width 30 30 30
