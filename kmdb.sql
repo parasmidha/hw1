@@ -164,9 +164,8 @@ INSERT into studios (name)
 values ("Warner Bros.");
 
 INSERT into actors (name)
-values ("Christian Bale"), ("Michael Caine"), ("Liam Neeson"), ("Katie Holmes"), ("Gary Oldman"), ("Heath Ledger"), ("Aaron Eckhart"), ("Maggie Gylenhaal"), ("Tom Hardy"), ("Joseph Gordon-Levitt"), ("Anne Hathaway");
+values ("Christian Bale"), ("Michael Caine"), ("Liam Neeson"), ("Katie Holmes"), ("Gary Oldman"), ("Heath Ledger"), ("Aaron Eckhart"), ("Maggie Gyllenhaal"), ("Tom Hardy"), ("Joseph Gordon-Levitt"), ("Anne Hathaway");
 
-SELECT * FROM actors;
 INSERT into movies (title, year_released, MPAA_rating, studio_id)
 values ("Batman Begins", "2005", "PG-13", 1), ("The Dark Knight", "2008", "PG-13", 1), ("The Dark Knight Rises", "2012", "PG-13", 1)
 ;
@@ -196,5 +195,6 @@ inner join movies on characters.movie_id = movies.id
 order by movies.title
 ;
 
+.width 30 30 30
 .mode column
 .headers off
